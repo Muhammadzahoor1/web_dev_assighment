@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular Position Cards with IDs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    
+    <header class="page-header">
+      <h1>Main Container</h1>
+    </header>
+
+    <!-- Div containing all the cards -->
+    <div class="cards-wrapper">
+
+      <!-- Card1:  Static Position -->
+      <div class="card" id="card1">
+        <div class="card-header">
+          <h2>1. Static card</h2>
+        </div>
+        <div class="card-body">
+          <p>This card uses default position: static. It flows naturally in the standard document layout without offsets.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Relative Position -->
+      <div class="card" id="card2">
+        <div class="card-header">
+          <h2>2. Relative card</h2>
+        </div>
+        <div class="card-body">
+          <p>This card uses position: relative. It is shifted relative to its normal position without affecting siblings.</p>
+        </div>
+      </div>
+
+      <!-- parent card specially for the absalute position -->
+      <div class="absolute-parent">
+        <!-- Card 3: Absolute Position -->
+        <div class="card" id="card3">
+          <div class="card-header">
+            <h2>3. Absolute Position</h2>
+          </div>
+          <div class="card-body">
+            <p>This card uses <code>position: absolute</code>. It is positioned relative to its nearest positioned parent container.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Fixed Position -->
+      <div class="card" id="card4">
+        <div class="card-header">
+          <h2>4. Fixed Position</h2>
+        </div>
+        <div class="card-body">
+          <p>This card uses position: fixed. It stays pinned to the bottom-right corner of your browser screen.</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Sticky Position -->
+      <div class="card" id="card5">
+        <div class="card-header">
+          <h2>5. Sticky Position</h2>
+        </div>
+        <div class="card-body">
+          <p>This card usesposition: sticky. It behaves relatively until scrolling reaches 20px from the top.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="page-footer">
+      <p>Scroll down for additional spacing.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

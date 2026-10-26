@@ -1,0 +1,99 @@
+/* ==========================================
+   2.Main  CONTAINERS
+   ========================================== */
+.main-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: #1e293b;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 500px;
+  color: #888;
+}
+
+/* ==========================================
+   3. UNIVERSAL BASE STYLES FOR ALL CARDS
+   ========================================== */
+.card {
+  background-color: #948585;
+  border-radius: 12px;
+  padding: 20px;
+  border: 5px solid #3b82f6;
+}
+
+/* .card-header {
+  margin-bottom: 10px;
+} */
+
+.badge {
+  background-color: #eff6ff;
+  color: #3b82f6;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+.absolute-parent {
+  position: relative;
+  height: 170px;
+  background-color: #e2e8f0;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+}
+
+/* Card 1: Static */
+#card1 {
+  position: static;
+  border: 5px solid #10b981;
+}
+
+/* Card 2: Relative */
+#card2 {
+  position: relative;
+  top: 15px;
+  left: 20px;
+  border: 5px solid #f59e0b;
+}
+
+/* Card 3: Absolute */
+#card3 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 90%;
+  border: 5px solid #8b5cf6;
+}
+
+/* Card 4: Fixed */
+#card4 {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 280px;
+  border: 5px solid #ef4444;
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card 5: Sticky */
+#card5 {
+  position: sticky;
+  top: 20px;
+  border: 5px solid #06b6d4;
+}
